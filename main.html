@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kristina Real Portfolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+    
+        body {
+            background: linear-gradient(135deg, #0b0016 , #15002b , #230046, #1a0033);
+            color: #fff;
+            background-size: 400% 400%;
+            animation: gradientMove 12s ease 
+        infinite; 
+            color: #fff;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+
+        }
+        
+
+        .hero {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+            max-width: 1000px;
+        }
+
+        .content {
+            text-align: center;
+            max-width: 500px;
+        }
+
+        h1 {
+            font-size: 80px;
+            font-weight: bold;
+            position: relative;
+        }
+
+        h2 {
+            font-size: 22px;
+            margin-top: 10px;
+            opacity: 0.9;
+        }
+
+        p {
+            margin: 20px 0;
+            line-height: 1.6;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 30px;
+            background: #7f56e3;
+            border-radius: 8px;
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 10px;
+            transition: 0.3s;
+        }
+
+        .btn-portfolio {
+            padding: 12px 28px;
+            border: 2px solid #ffffff;
+            color: #ffffff;
+            background: #663399;
+            border-radius: 50px;
+            font-size: 16px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .btn:hover {
+            background: #9c7cf3;
+        }
+        .btn-portfolio:hover {
+            background: #ffffff;
+            color: #5a08d8;
+            border-color: #ffffff;
+        }
+
+        /* ✔ Floating animation (taas–baba) */
+        .image img {
+            width: 350px;
+            height: 350px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 4px solid #ffffff40;
+            animation: float 3s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0% { transform: translateY(0); }
+            50% { transform: translateY(-15px); }
+            100% { transform: translateY(0); }
+        }
+
+        @keyframes gradientMove {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <section class="hero">
+        <div class="content">
+            <h1>Kristina Real</h1>
+            <h2>BSIT Web Developer and Learner</h2>
+
+            <p>
+                Studying Bachelor of Science in Information Technology (BSIT).  
+                I chose this course to improve my skills in programming languages  
+                such as Java and HTML.
+            </p>
+
+            <a href="index.html" class="btn-portfolio">View My Portfolio</a>
+        </div>
+
+        <div class="image">
+            <img src="tina.jpeg" alt="Kristina Real">
+        </div>
+    </section>
+
+</body>
+</html>
